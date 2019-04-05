@@ -1,7 +1,7 @@
 # Project - Item Catalog
 ***
 
-The project builds a dynamic web application with persistent data storage to provide a compelling service to the users. The web application provides a list of sports items within a variety of sports categories and integrates third party user registration and authentication. Authenticated users should have the ability to post, edit, and delete their own items. 
+The project builds a dynamic web application with persistent data storage to provide a compelling service to the users. The web application provides a list of sports items within a variety of sports categories and integrates third party user registration and authentication. Authenticated users have the ability to post, edit, and delete their own items. 
 
 The project created a RESTful web application from scratch using Python framework Flask and implemented third-party OAuth authentication using Google's Sign in authentication services, HTML5, CSS3, SQLite, VirtualBox, and Vagrant. Additionally it uses the various HTTP methods to relate to CRUD operations.
 
@@ -38,18 +38,20 @@ The project created a RESTful web application from scratch using Python framewor
    option 1: download and unzip this file: [FSND-Virtual-Machine.zip](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip) 
    
    option 2: use Github to fork and clone the repository https://github.com/udacity/fullstack-nanodegree-vm.
+   
    Either way, you will end up with a new directory containing the VM files. Change to this directory in your terminal with cd. Inside, you will find another directory called vagrant. Change directory to the vagrant directory.
    
 * Start the virtual machine
+   
    From your terminal, inside the vagrant subdirectory, run the command `vagrant up`. This will cause Vagrant to download the Linux operating system and install it. 
    
    `$ vagrant up`
-* Log in to newly installed Linux VM
+* Log into newly installed Linux VM
 
-   When vagrant up is finished running, you will get your shell prompt back. At this point, you can run vagrant ssh to log in to your newly installed Linux VM!
+   When vagrant up is finished running, you will get your shell prompt back. At this point, you can run vagrant ssh to log into your newly installed Linux VM!
    
   `$ vagrant ssh`
-* Inside the VM, change directory to `/vagrant` to navigate to the shared directory.
+* Inside the VM, change directory to `/vagrant/catalog` to navigate to the shared directory.
 * Setup the database:
 
     `python database_setup.py`
@@ -89,7 +91,7 @@ The project created a RESTful web application from scratch using Python framewor
 
    ![Alt](/images/item_info_login.png "Info for a specific Item before Login")
    
-* localhost:5000 - after logging in, a user has the ability to add, update, or delete item information. Users should be able to modify only those items that they themselves have created.
+* localhost:5000 - after logging in, a user has the ability to add, update, or delete item information. Users are able to modify only those items that they themselves have created.
 
    ![Alt](/images/home_logout.png "Homepage Logged in")
    
