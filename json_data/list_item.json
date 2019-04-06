@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Two Shinguards",
+    "description": "protection for the front part of the lower leg",
+    "category": "Soccer"
+  },
+  {
+    "name": "Cleats",
+    "description": "Special shoes with spikes for added traction",
+    "category": "Soccer"
+  },
+  {
+    "name": "Soccer Jersey",
+    "description": "Shirt for use in soccer",
+    "category": "Soccer"
+  },
+
+
+  {
+    "name": "Basketball Sneakers",
+    "description": "Athletic shoes designed for use on a gym floor",
+    "category": "Basketball"
+  },
+  {
+    "name": "Basketball",
+    "description": "Spherical ball that varies in size depending on usage made of either leather or rubber",
+    "category": "Basketball"
+  },
+
+
+  {
+    "name": "Baseball Bat",
+    "description": "Stick used to hit the baseball; made of either wood or metal",
+    "category": "Baseball"
+  },
+  {
+    "name": "Baseball Glove",
+    "description": "Large leather glove made especially for catching baseball",
+    "category": "Baseball"
+  },
+
+  {
+    "name": "Frisbee",
+    "description": "Plastic disc that is thrown over distance to another person",
+    "category": "Frisbee"
+  },
+
+
+  {
+    "name": "Snowboard",
+    "description": "Similar to skis but wider and shorter; more like a rufboard for snow",
+    "category": "Snowboarding"
+  },
+   {
+    "name": "Snowboarding Goggles",
+    "description": "Protective eyewear that help reduce glare from the sun off the snow",
+    "category": "Snowboarding"
+  },
+
+  {
+    "name": "Harness",
+    "description": "Protective straps and fittings that attaches to a rope to help prevent falling",
+    "category": "Rock Climbing"
+  },
+  {
+    "name": "Climbing Shoes",
+    "description": "Rubber soled shoes that molds to the surface of the rock",
+    "category": "Rock Climbing"
+  },
+
+
+  {
+    "name": "Football Goalpoasts",
+    "description": "U-shaped bars used for the kicking part of scoring",
+    "category": "Football"
+  },
+  {
+    "name": "Football Helmet",
+    "description": "Protective headware with padding",
+    "category": "Football"
+  },
+
+  {
+    "name": "Skates",
+    "description": "Footwear used for gliding on the ice surface; comprised of a boot with a metal blade",
+    "category": "Skating"
+  },
+
+  {
+    "name": "Hockey Puck",
+    "description": "Small round thick rubber disk",
+    "category": "Hockey"
+  }
+]
