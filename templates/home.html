@@ -1,0 +1,23 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% include "flash_message.html" %}
+{% block content %}
+
+<div class="center-div">
+	<div class="grid-container">
+		<div class="categories">
+			<h2> Categories </h2>
+	        {% for category in categories %}
+				<a href="/catalog/{{category.name}}"><h5>{{(category.name).title()}}</h5></a>
+			{% endfor %}
+		</div>
+		<div class="list-items">	
+			<a href={{url_for('newListItem')}}> Add Item </a>	
+			<h2> Latest Items </h2>
+			{% for item in items %}
+				<a href="/catalog/{{(item.category).name}}/{{item.name}}"><h5>{{(item.name).title()}}</h5></a>
+			{% endfor %}
+		</div>		
+	</div>
+</div>
+{% endblock %}

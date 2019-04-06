@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% include "flash_message.html" %}
+{% block content %}
+
+<div class = 'center-div'>
+	<div class="list-items">
+		<form action="{{ url_for('newListItem')}}" method = 'POST'>
+	    	<p>Name</p>
+	    	<input type = 'text' size = '30' name = 'name' required>
+	   		<p>Description</p>
+	    	<textarea cols = '100' row = '3' name = 'description' required></textarea>
+	    	<p>Category</p>
+	    	<select name = 'category' required>
+	    		{% for category in categoryList %}
+	            	<option value= '{{ category }}'>{{category}}</option>
+	        	{% endfor %}
+	    	</select>
+	    <br><br>
+	    <input type='submit' value='Submit'>
+		</form>
+		<br>
+		<a href = "{{ url_for('home') }}"> Cancel </a>
+	</div>
+</div>
+{% endblock %}

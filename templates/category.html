@@ -1,0 +1,38 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% include "flash_message.html" %}
+{% block content %}
+
+<body>
+	<div class = 'flash'>
+		{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		
+		<ul>
+			{% for message in messages %}
+			<strong> {{ message }} </strong>
+			{% endfor %}
+		</ul>
+		{% endif %}
+		{% endwith %}
+
+	</div>
+
+	<div class="center-div">
+		<div class="grid-container">
+			<div class="Categories">
+				<h2> Categories </h2>
+	            {% for category in allCategories %}
+				<a href="/catalog/{{category.name}}"><h5>{{(category.name).title()}}</h5></a>
+				{% endfor %}
+			</div>
+
+			<div class="list-items">	
+				<h3> {{category.title()}} Items </h3>
+				{% for item in items %}
+				<a href="/catalog/{{(item.category).name}}/{{item.name}}"><h5>{{(item.name).title()}}</h5></a>
+				{% endfor %}
+			</div>		
+		</div>
+	</div>
+{% endblock %}

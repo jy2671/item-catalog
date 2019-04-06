@@ -1,0 +1,141 @@
+* {
+	font-family: sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-family: "Helvetica", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	color: #FFFFFF;
+	line-height: 40px;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 24px;
+	color: #000000;
+	line-height: 29px;
+}
+
+h3 {
+	font-size: 18px;
+	color: #4A4A4A;
+	line-height: 23px;
+}
+
+a {
+ 	font-size: 16px;
+ 	color: #006400;
+ 	text-decoration: none;
+ }
+ 
+ a:hover{
+	color:#A52A2A;
+	text-decoration: none;
+}
+
+ body {
+ 	background-color: #333333;
+}
+
+p {
+ 	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+ 	font-size: 16px;
+ 	color: #7B7573;
+ 	line-height: 24px;
+ 	font-weight: 400;
+ }
+
+nav {
+	margin: 0;
+	width: 100%;
+}
+
+.description-container {
+	border: solid;
+	background-color: #DAAD86;
+	padding: 15px;
+}
+
+.catalog_nav {
+	background-color: #006400;
+	border-bottom: solid;
+	padding-bottom: 5px;
+
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: 220px;
+	margin-left: 200px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	border-spacing: 8px
+}
+
+.center-div {
+	border-bottom: solid;
+	padding-bottom: 5px;
+
+	margin: 0;
+
+	padding-left: 0px;
+	padding-right: 20px;
+	padding-top: 5px;
+	border-spacing: 8px
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 20% 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "categories list-items";
+
+}
+
+.categories { 
+	grid-area: categories; 
+	background-color: #A9A9A9;
+	padding: 20px;
+}
+
+.list-items { 
+	grid-area: list-items; 
+	background-color: #D3D3D3;
+	padding: 20px;
+}
+
+.grid-container-all {
+	display: grid;
+	grid-template-columns: 0% 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "categories list-items";
+}
+
+.button {
+	display:inline-block;
+	padding:0.4em 1.3em;
+	margin:0 0.4em 0.4em 0;
+	color:#FFFFFF;
+	background-color:#FF4500;
+	border: none;
+	text-align:center;
+	font-size: 12px;
+}
+
+.button:hover{
+	 background-color:#D3D3D3;
+}
+
+.flash:{ 
+	background: #cee5F5; 
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+  color:red;
+}

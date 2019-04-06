@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% include "flash_message.html" %}
+{% block content %}
+
+<div class="center-div">
+	<div class="list-items">	
+		<h2>{{ item.name }}</h2>
+		<h5>{{ item.description }}<h5><br>
+		<a href='{{url_for('editListItem',categoryName = category.name, itemName = item.name)}}'>Edit | </a>
+		<a href='{{url_for('deleteListItem', categoryName = category.name, itemName = item.name)}}'>Delete</a>
+	</div>		
+</div>
+{% endblock %}

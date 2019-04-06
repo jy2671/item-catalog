@@ -1,0 +1,27 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% include "flash_message.html" %}
+{% block content %}
+
+<div class="center-div">
+	<div class="list-items">
+		<h2> Edit Item - {{ item }}</h2>
+	    <form action= "{{url_for('editListItem', categoryName=categoryName, itemName=item)}}" method = 'POST'>
+	    <p>Name:</p>
+	    <input type = 'text' size='30' name = 'name' value = '{{ item }}' placeholder = '{{item}}'>
+	    <p>Description</p>
+	    <textarea cols="100" rows="3" name="description">{{itemDescription}}</textarea>
+	    <p>Category</p>
+	    <select name = 'category'>
+	    	{% for category in categoryList %}
+	    	    <option value='{{ category }}' {% if category == categoryName%} selected {% endif %} >{{ category }}</option>
+	    	{% endfor %}
+	    </select>
+	    <br><br>
+	    <input type='submit' value='Submit'>
+	    </form>
+	    <br>
+		<a href = "{{ url_for('home') }}"> Cancel </a>
+	</div>
+</div>
+{% endblock %}
